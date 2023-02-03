@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ViewData</title>
+  </head>
+  <body>
+    <ul>
+        {% for item in subject_name %}
+       <li>
+         {{ item }}분반 <br>
+         {% for names in subject_list_final[loop.index0]%}
+            {{ names }}
+        {% endfor %}
+       </li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
